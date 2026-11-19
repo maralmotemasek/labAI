@@ -1,0 +1,808 @@
+
+/* ========================================
+   LABAI - ANALYSIS REPORT
+   Premium Medical Theme
+======================================== */
+
+.analysis-report-page {
+  direction: rtl;
+  width: 100%;
+  padding: 25px 0 50px;
+  color: #294A68;
+  box-sizing: border-box;
+}
+
+.analysis-report-shell {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 42px;
+  box-sizing: border-box;
+
+  background: #FFFEFC;
+
+  border: 1px solid #E9E3D9;
+  border-radius: 24px;
+
+  box-shadow:
+    0 12px 35px rgba(41, 74, 104, 0.07);
+}
+
+
+/* ========================================
+   PAGE HEADER
+======================================== */
+
+.analysis-page-header {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.analysis-stage-badge {
+  display: inline-block;
+
+  padding: 9px 20px;
+
+  background: #FFF3F0;
+  color: #D76B63;
+
+  border: 1px solid #F0D0CA;
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+.analysis-header-icon {
+  width: 62px;
+  height: 62px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #F0F6F1;
+  border: 1px solid #D9E7DB;
+  border-radius: 50%;
+
+  color: #638A70;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.analysis-page-header h2 {
+  color: #294A68;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0 0 15px;
+  line-height: 1.8;
+}
+
+.analysis-page-header p {
+  color: #71869D;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  margin: 0;
+}
+
+
+/* ========================================
+   SECTIONS
+======================================== */
+
+.analysis-section {
+  background: #FFFFFF;
+
+  border: 1px solid #E8E3DA;
+  border-radius: 19px;
+
+  padding: 28px;
+  margin-bottom: 25px;
+
+  box-shadow:
+    0 5px 18px rgba(41, 74, 104, 0.035);
+}
+
+.analysis-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding-bottom: 22px;
+  margin-bottom: 25px;
+
+  border-bottom: 1px solid #EAE4D9;
+}
+
+.analysis-section-number {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #F0F4F6;
+  color: #53718D;
+
+  border: 1px solid #E0E8ED;
+  border-radius: 50%;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.analysis-section-heading h3 {
+  color: #294A68;
+  font-size: 21px;
+  font-weight: 850;
+  margin: 0 0 5px;
+}
+
+.analysis-section-heading p {
+  color: #71869D;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+/* ========================================
+   PERSONAL INFORMATION
+======================================== */
+
+.analysis-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.analysis-profile-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 19px;
+
+  background: #F8FAFB;
+  border: 1px solid #E5EAF0;
+  border-radius: 13px;
+}
+
+.analysis-profile-item span {
+  color: #71869D;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.analysis-profile-item strong {
+  color: #294A68;
+  font-size: 17px;
+  font-weight: 850;
+}
+
+
+/* ========================================
+   SUMMARY CARDS
+======================================== */
+
+.analysis-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.analysis-summary-card {
+  min-height: 145px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  border-radius: 15px;
+  border: 1px solid transparent;
+
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.analysis-summary-card .summary-icon {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.analysis-summary-card strong {
+  font-size: 29px;
+  font-weight: 900;
+}
+
+.analysis-summary-card > span:last-child {
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+/* Total */
+
+.analysis-summary-card.total {
+  background: #F0F4F7;
+  border-color: #E0E8ED;
+  color: #53718D;
+}
+
+.analysis-summary-card.total .summary-icon {
+  background: #E1EAF0;
+}
+
+
+/* Normal */
+
+.analysis-summary-card.normal {
+  background: #F0F6F1;
+  border-color: #D9E7DB;
+  color: #638A70;
+}
+
+.analysis-summary-card.normal .summary-icon {
+  background: #DFECE1;
+}
+
+
+/* High */
+
+.analysis-summary-card.high {
+  background: #FFF3F0;
+  border-color: #F0D8D2;
+  color: #D76B63;
+}
+
+.analysis-summary-card.high .summary-icon {
+  background: #FBE2DD;
+}
+
+
+/* Low */
+
+.analysis-summary-card.low {
+  background: #F5F2F8;
+  border-color: #E7DDEC;
+  color: #8C779F;
+}
+
+.analysis-summary-card.low .summary-icon {
+  background: #EDE5F2;
+}
+
+.analysis-unknown-note {
+  margin: 18px 0 0;
+  color: #71869D;
+  font-size: 14px;
+}
+
+
+/* ========================================
+   TEST CARDS
+======================================== */
+
+.analysis-tests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.analysis-test-card {
+  padding: 23px;
+
+  background: #FFFEFC;
+
+  border: 1px solid #E8E3DA;
+  border-radius: 16px;
+
+  transition: box-shadow 0.2s ease;
+}
+
+.analysis-test-card:hover {
+  box-shadow: 0 7px 20px rgba(41, 74, 104, 0.06);
+}
+
+.analysis-test-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.analysis-test-header h4 {
+  color: #294A68;
+  font-size: 19px;
+  font-weight: 850;
+  margin: 0 0 6px;
+}
+
+.analysis-test-header span {
+  color: #8799AA;
+  font-size: 13px;
+}
+
+
+/* Status */
+
+.analysis-status {
+  padding: 9px 15px;
+
+  border-radius: 30px;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+.analysis-status.normal {
+  background: #F0F6F1;
+  color: #638A70;
+  border: 1px solid #D9E7DB;
+}
+
+.analysis-status.high {
+  background: #FFF3F0;
+  color: #D76B63;
+  border: 1px solid #F0D8D2;
+}
+
+.analysis-status.low {
+  background: #F5F2F8;
+  color: #8C779F;
+  border: 1px solid #E7DDEC;
+}
+
+.analysis-status.unknown {
+  background: #F0F4F7;
+  color: #71869D;
+  border: 1px solid #E0E8ED;
+}
+
+
+/* Test values */
+
+.analysis-test-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.analysis-value-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+
+  padding: 17px 10px;
+
+  background: #F8FAFB;
+  border: 1px solid #E5EAF0;
+  border-radius: 12px;
+}
+
+.analysis-value-box span {
+  color: #71869D;
+  font-size: 13px;
+  font-weight: 650;
+  text-align: center;
+}
+
+.analysis-value-box strong {
+  color: #294A68;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.analysis-value-box small {
+  color: #8A9AA9;
+  font-size: 12px;
+}
+
+
+/* Description */
+
+.analysis-test-description {
+  margin-top: 15px;
+  padding: 12px 15px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+  line-height: 1.9;
+  font-weight: 650;
+}
+
+.analysis-test-description.normal {
+  background: #F0F6F1;
+  color: #638A70;
+}
+
+.analysis-test-description.high {
+  background: #FFF3F0;
+  color: #C9675F;
+}
+
+.analysis-test-description.low {
+  background: #F5F2F8;
+  color: #8C779F;
+}
+
+.analysis-test-description.unknown {
+  background: #F0F4F7;
+  color: #71869D;
+}
+
+
+/* Notes */
+
+.analysis-test-notes {
+  margin-top: 15px;
+  padding-top: 14px;
+  border-top: 1px solid #EAE4D9;
+}
+
+.analysis-test-notes strong {
+  color: #294A68;
+  font-size: 14px;
+}
+
+.analysis-test-notes p {
+  color: #71869D;
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 7px 0 0;
+  white-space: pre-wrap;
+}
+
+
+/* ========================================
+   AI ANALYSIS CARD
+======================================== */
+
+.analysis-ai-card {
+  background: #F8FAFB;
+
+  border: 1px solid #E0E8ED;
+  border-right: 4px solid #71869D;
+
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.analysis-ai-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+
+  border-bottom: 1px solid #E2E9EE;
+}
+
+.analysis-ai-icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #E8EFF4;
+  color: #294A68;
+
+  border-radius: 13px;
+
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.analysis-ai-header h4 {
+  color: #294A68;
+  font-size: 18px;
+  font-weight: 850;
+  margin: 0 0 5px;
+}
+
+.analysis-ai-header span {
+  color: #71869D;
+  font-size: 13px;
+}
+
+.analysis-ai-content {
+  color: #526F89;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2.2;
+}
+
+.analysis-ai-content p {
+  margin: 0 0 12px;
+}
+
+.analysis-ai-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ========================================
+   MEDICAL NOTICE
+======================================== */
+
+.analysis-medical-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+
+  padding: 22px;
+
+  background: #FFF7F4;
+
+  border: 1px solid #F0D8D2;
+  border-right: 4px solid #D76B63;
+
+  border-radius: 15px;
+
+  margin-bottom: 28px;
+}
+
+.analysis-notice-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #FBE6E1;
+  color: #D76B63;
+
+  border-radius: 50%;
+
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.analysis-medical-notice h4 {
+  color: #294A68;
+  font-size: 16px;
+  font-weight: 850;
+  margin: 0 0 8px;
+}
+
+.analysis-medical-notice p {
+  color: #71869D;
+  font-size: 14px;
+  line-height: 2;
+  margin: 0;
+}
+
+
+/* ========================================
+   BOTTOM BUTTONS
+======================================== */
+
+.analysis-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.analysis-actions button {
+  min-width: 220px;
+  min-height: 54px;
+
+  padding: 0 22px;
+
+  border-radius: 12px;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.analysis-back-button {
+  background: #294A68;
+  color: #FFFFFF;
+  border: 1px solid #294A68;
+}
+
+.analysis-back-button:hover {
+  background: #1E3C59;
+  transform: translateY(-2px);
+}
+
+.analysis-edit-button {
+  background: #FFFFFF;
+  color: #294A68;
+  border: 1px solid #D9E1E8;
+}
+
+.analysis-edit-button:hover {
+  background: #F0F4F7;
+  transform: translateY(-2px);
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+  .analysis-profile-grid,
+  .analysis-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .analysis-report-page {
+    padding: 15px 0 30px;
+  }
+
+  .analysis-report-shell {
+    padding: 22px 15px;
+    border-radius: 17px;
+  }
+
+  .analysis-page-header {
+    margin-bottom: 28px;
+  }
+
+  .analysis-page-header h2 {
+    font-size: 25px;
+  }
+
+  .analysis-page-header p {
+    font-size: 14px;
+  }
+
+  .analysis-section {
+    padding: 19px 14px;
+    margin-bottom: 18px;
+  }
+
+  .analysis-section-heading h3 {
+    font-size: 17px;
+  }
+
+  .analysis-section-heading p {
+    font-size: 12px;
+  }
+
+  .analysis-section-number {
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+  }
+
+  .analysis-profile-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+  }
+
+  .analysis-profile-item {
+    padding: 13px;
+  }
+
+  .analysis-profile-item strong {
+    font-size: 15px;
+  }
+
+  .analysis-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .analysis-summary-card {
+    min-height: 125px;
+  }
+
+  .analysis-test-card {
+    padding: 15px 12px;
+  }
+
+  .analysis-test-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .analysis-test-header h4 {
+    font-size: 17px;
+  }
+
+  .analysis-test-values {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-value-box {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 13px;
+  }
+
+  .analysis-value-box strong {
+    font-size: 19px;
+  }
+
+  .analysis-ai-card {
+    padding: 17px;
+  }
+
+  .analysis-ai-content {
+    font-size: 14px;
+  }
+
+  .analysis-medical-notice {
+    padding: 16px;
+  }
+
+  .analysis-actions {
+    flex-direction: column;
+  }
+
+  .analysis-actions button {
+    width: 100%;
+    min-width: 0;
+  }
+
+}
+
+/* ========================================
+   BOTH FINAL BUTTONS - NAVY BLUE
+======================================== */
+
+.analysis-actions .analysis-back-button,
+.analysis-actions .analysis-edit-button {
+  background-color: #294A68 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #294A68 !important;
+  font-weight: 800;
+}
+
+.analysis-actions .analysis-back-button:hover,
+.analysis-actions .analysis-edit-button:hover {
+  background-color: #1E3C59 !important;
+  border-color: #1E3C59 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(41, 74, 104, 0.15);
+}

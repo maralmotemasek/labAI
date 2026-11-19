@@ -1,0 +1,1475 @@
+/* ========================================
+   Global Form Direction
+======================================== */
+
+.profile-page {
+  width: 100%;
+
+  min-height: calc(100vh - 170px);
+
+  background-color: #fdfaf4;
+
+  padding: 45px 20px 60px;
+
+  direction: rtl;
+
+  box-sizing: border-box;
+}
+
+
+.profile-container {
+  width: min(1050px, 100%);
+
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   Page Header
+======================================== */
+
+.form-page-header {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+
+.form-page-header h2 {
+  margin: 0 0 12px;
+
+  color: #173b70;
+
+  font-size: 31px;
+
+  font-weight: 800;
+
+  line-height: 1.5;
+}
+
+
+.form-page-header p {
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  color: #526b8e;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  line-height: 2;
+}
+
+
+/* ========================================
+   Form
+======================================== */
+
+.profile-form {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+
+/* ========================================
+   Cards
+======================================== */
+
+.form-card {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+
+  border: 1px solid #eee8dc;
+
+  border-radius: 18px;
+
+  padding: 28px;
+
+  box-shadow:
+    0 5px 18px rgba(23, 59, 112, 0.055);
+}
+
+
+/* ========================================
+   Section Header
+======================================== */
+
+.form-section-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 25px;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid #edf0f4;
+}
+
+
+.section-number {
+  width: 42px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #fff1f1;
+
+  color: #d94b4b;
+
+  font-size: 18px;
+
+  font-weight: 800;
+}
+
+
+.form-section-header h3 {
+  margin: 0 0 3px;
+
+  color: #173b70;
+
+  font-size: 21px;
+
+  font-weight: 800;
+
+  line-height: 1.5;
+}
+
+
+.form-section-header p {
+  margin: 0;
+
+  color: #657995;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   Grid
+======================================== */
+
+.form-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+/* ========================================
+   Form Fields
+======================================== */
+
+.form-field {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  box-sizing: border-box;
+}
+
+
+.form-field.full-width {
+  grid-column: 1 / -1;
+}
+
+
+.form-field label {
+  color: #173b70;
+
+  font-size: 17px;
+
+  font-weight: 750;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   Inputs
+======================================== */
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1.5px solid #d9e0e9;
+
+  border-radius: 11px;
+
+  background-color: #ffffff;
+
+  color: #173b70;
+
+  font-family: inherit;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+
+/* ========================================
+   Text Inputs
+======================================== */
+
+.form-field input,
+.form-field select {
+  min-height: 53px;
+
+  padding: 0 15px;
+}
+
+
+/* ========================================
+   Textarea
+======================================== */
+
+.form-field textarea {
+  min-height: 120px;
+
+  padding: 14px 15px;
+
+  resize: vertical;
+
+  line-height: 1.9;
+}
+
+
+/* ========================================
+   Placeholder
+======================================== */
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #8ca0b9;
+
+  font-size: 16px;
+
+  font-weight: 500;
+}
+
+
+/* ========================================
+   Focus
+======================================== */
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #d94b4b;
+
+  background-color: #fffdfb;
+
+  box-shadow:
+    0 0 0 4px rgba(217, 75, 75, 0.08);
+}
+
+
+/* ========================================
+   Input Unit
+======================================== */
+
+.input-unit {
+  width: 100%;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+.input-unit input {
+  padding-left: 60px;
+}
+
+
+.input-unit span {
+  position: absolute;
+
+  left: 15px;
+
+  color: #60748f;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  direction: ltr;
+}
+
+
+/* ========================================
+   Description
+======================================== */
+
+.field-description {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #667b96;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 1.8;
+}
+
+
+/* ========================================
+   Submit
+======================================== */
+
+.form-submit-area {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding-top: 4px;
+}
+
+
+.profile-submit-button {
+  min-width: 270px;
+
+  min-height: 56px;
+
+  padding: 0 32px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background-color: #35a66f;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 18px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 14px rgba(53, 166, 111, 0.20);
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.profile-submit-button:hover {
+  background-color: #2d9362;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(53, 166, 111, 0.25);
+}
+
+
+.profile-submit-button:active {
+  transform: translateY(0);
+}
+
+
+.form-submit-area p {
+  margin: 0;
+
+  color: #657995;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  text-align: center;
+
+  line-height: 1.8;
+}
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 768px) {
+
+  .profile-page {
+    padding: 32px 15px 45px;
+  }
+
+
+  .form-page-header h2 {
+    font-size: 27px;
+  }
+
+
+  .form-page-header p {
+    font-size: 16px;
+  }
+
+
+  .form-card {
+    padding: 22px 18px;
+  }
+
+
+  .form-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  .form-section-header h3 {
+    font-size: 19px;
+  }
+
+
+  .form-section-header p {
+    font-size: 14px;
+  }
+
+
+  .form-field label {
+    font-size: 16px;
+  }
+
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    font-size: 16px;
+  }
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 480px) {
+
+  .profile-page {
+    padding: 25px 10px 35px;
+  }
+
+
+  .form-page-header {
+    margin-bottom: 25px;
+  }
+
+
+  .form-page-header h2 {
+    font-size: 24px;
+  }
+
+
+  .form-page-header p {
+    font-size: 15px;
+  }
+
+
+  .form-card {
+    padding: 19px 14px;
+
+    border-radius: 15px;
+  }
+
+
+  .form-section-header {
+    gap: 10px;
+
+    margin-bottom: 20px;
+  }
+
+
+  .section-number {
+    width: 36px;
+
+    height: 36px;
+
+    font-size: 16px;
+  }
+
+
+  .form-section-header h3 {
+    font-size: 18px;
+  }
+
+
+  .form-section-header p {
+    font-size: 13px;
+  }
+
+
+  .form-field input,
+  .form-field select {
+    min-height: 50px;
+  }
+
+
+  .form-field textarea {
+    min-height: 110px;
+  }
+
+
+  .profile-submit-button {
+    width: 100%;
+
+    min-width: 0;
+
+    font-size: 17px;
+  }
+}
+
+/* ========================================
+   REQUIRED FIELD STAR
+======================================== */
+
+.required-star {
+  display: inline-block;
+
+  color: #d94b4b;
+
+  font-size: 21px;
+  font-weight: 900;
+
+  margin-right: 5px;
+
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.required-hint {
+  margin: 18px 0 0;
+
+  color: #647995;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   VALIDATION TOAST
+======================================== */
+
+.validation-toast {
+  position: fixed;
+
+  top: 25px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: min(480px, calc(100% - 30px));
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 16px 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #f1d0d0;
+  border-right: 5px solid #d94b4b;
+
+  border-radius: 13px;
+
+  color: #173b70;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+
+  line-height: 1.8;
+
+  box-shadow: 0 8px 28px rgba(23, 59, 112, 0.14);
+
+  z-index: 9999;
+
+  animation: toast-appear 0.3s ease;
+}
+
+
+.toast-icon {
+  width: 28px;
+  height: 28px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff0f0;
+
+  color: #d94b4b;
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+
+@keyframes toast-appear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+
+/* ========================================
+   PRIVACY NOTICE
+======================================== */
+
+.privacy-notice {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 25px;
+
+  padding: 18px 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e9e4da;
+
+  border-right: 4px solid #d94b4b;
+
+  border-radius: 14px;
+
+  box-shadow: 0 4px 14px rgba(23, 59, 112, 0.035);
+}
+
+
+.privacy-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff6f5;
+
+  border-radius: 13px;
+}
+
+
+.privacy-icon svg {
+  width: 38px;
+  height: 38px;
+}
+
+
+.privacy-text {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.privacy-text h4 {
+  margin: 0;
+
+  color: #173b70;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  line-height: 1.8;
+}
+
+
+.privacy-text p {
+  margin: 0;
+
+  color: #647995;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 1.9;
+}
+
+
+/* ========================================
+   Invalid Field Focus
+======================================== */
+
+.profile-form input:focus,
+.profile-form select:focus,
+.profile-form textarea:focus {
+  border-color: #d94b4b;
+
+  box-shadow: 0 0 0 4px rgba(217, 75, 75, 0.09);
+}
+
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 650px) {
+
+  .privacy-notice {
+    padding: 15px;
+
+    gap: 11px;
+
+    align-items: flex-start;
+  }
+
+  .privacy-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .privacy-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .privacy-text h4 {
+    font-size: 14px;
+  }
+
+  .privacy-text p {
+    font-size: 12px;
+  }
+
+  .validation-toast {
+    top: 15px;
+
+    padding: 13px 15px;
+
+    font-size: 13px;
+  }
+
+  .required-hint {
+    font-size: 13px;
+  }
+}
+
+/* ========================================
+   LABAI - UNIFIED DESIGN SYSTEM
+======================================== */
+
+:root {
+  --labai-cream: #FBF8F1;
+  --labai-white: #FFFFFF;
+
+  --labai-navy: #24476F;
+  --labai-blue: #71869D;
+
+  --labai-red: #D95B5B;
+  --labai-green: #8EAA99;
+
+  --labai-border: #EAE4D9;
+  --labai-soft-red: #FFF3F1;
+  --labai-soft-green: #F0F6F1;
+}
+
+
+/* ========================================
+   Background & Typography
+======================================== */
+
+.main-content {
+  background-color: var(--labai-cream);
+}
+
+.main-content .page-container,
+.main-content .page-container * {
+  font-family:
+    "Vazirmatn Variable",
+    "Vazirmatn",
+    Tahoma,
+    sans-serif;
+}
+
+.main-content .page-container {
+  color: var(--labai-navy);
+}
+
+
+/* ========================================
+   Unified Headings
+======================================== */
+
+.main-content .page-container h1,
+.main-content .page-container h2 {
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  line-height: 1.8;
+  color: var(--labai-navy);
+}
+
+.main-content .page-container h3 {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  line-height: 1.8;
+  color: var(--labai-navy);
+}
+
+.main-content .page-container h4 {
+  font-size: 16px !important;
+  font-weight: 750 !important;
+  color: var(--labai-navy);
+}
+
+
+/* ========================================
+   Unified Paragraphs
+======================================== */
+
+.main-content .page-container p {
+  font-size: 15px !important;
+  font-weight: 500;
+  line-height: 1.9;
+  color: var(--labai-blue);
+}
+
+
+/* ========================================
+   Labels
+======================================== */
+
+.main-content .page-container label {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: var(--labai-navy);
+}
+
+
+/* ========================================
+   Input Fields
+======================================== */
+
+.main-content .page-container input,
+.main-content .page-container select,
+.main-content .page-container textarea {
+  font-family: inherit;
+
+  font-size: 15px !important;
+  font-weight: 500;
+
+  color: var(--labai-navy);
+
+  background-color: var(--labai-white);
+
+  border-color: var(--labai-border);
+}
+
+.main-content .page-container input::placeholder,
+.main-content .page-container textarea::placeholder {
+  color: #9AA8B5;
+  opacity: 1;
+}
+
+.main-content .page-container input:focus,
+.main-content .page-container select:focus,
+.main-content .page-container textarea:focus {
+  border-color: var(--labai-green);
+
+  outline: none;
+
+  box-shadow: 0 0 0 3px rgba(142, 170, 153, 0.15);
+}
+
+
+/* ========================================
+   Cards
+======================================== */
+
+.main-content .page-container [class$="-card"],
+.main-content .page-container .form-card {
+  background-color: var(--labai-white);
+  border-color: var(--labai-border);
+
+  box-shadow: 0 5px 18px rgba(36, 71, 111, 0.035);
+}
+
+
+/* ========================================
+   Privacy Notice
+======================================== */
+
+.main-content .page-container .privacy-notice {
+  background-color: #FFFFFF;
+  border-color: var(--labai-border);
+  border-right-color: var(--labai-red);
+}
+
+.main-content .page-container .privacy-text h4 {
+  color: var(--labai-navy);
+}
+
+.main-content .page-container .privacy-text p {
+  color: var(--labai-blue);
+}
+
+
+/* ========================================
+   Success States
+======================================== */
+
+.main-content .page-container .completed,
+.main-content .page-container .success {
+  color: #638B70;
+}
+
+.main-content .page-container .success-message {
+  background-color: var(--labai-soft-green);
+  color: #638B70;
+  border-color: #D5E5D8;
+}
+
+
+/* ========================================
+   Warning & Required Fields
+======================================== */
+
+.main-content .page-container .required-star {
+  color: var(--labai-red);
+}
+
+.main-content .page-container .validation-toast {
+  border-color: #F1D0D0;
+  border-right-color: var(--labai-red);
+  color: var(--labai-navy);
+}
+
+
+/* ========================================
+   Buttons Typography
+======================================== */
+
+.main-content .page-container button {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+
+/* ========================================
+   Descriptions
+======================================== */
+
+.main-content .page-container .field-description,
+.main-content .page-container .required-hint {
+  color: var(--labai-blue);
+  font-size: 13px !important;
+  line-height: 1.9;
+}
+
+
+/* ========================================
+   Responsive Typography
+======================================== */
+
+@media (max-width: 650px) {
+
+  .main-content .page-container h1,
+  .main-content .page-container h2 {
+    font-size: 25px !important;
+  }
+
+  .main-content .page-container h3 {
+    font-size: 18px !important;
+  }
+
+  .main-content .page-container h4 {
+    font-size: 15px !important;
+  }
+
+  .main-content .page-container p {
+    font-size: 14px !important;
+  }
+
+  .main-content .page-container label {
+    font-size: 14px !important;
+  }
+
+  .main-content .page-container input,
+  .main-content .page-container select,
+  .main-content .page-container textarea {
+    font-size: 14px !important;
+  }
+
+}
+
+/* ========================================
+   LABAI PREMIUM COLOR THEME
+======================================== */
+
+.main-content {
+  background-color: #F1EEE7 !important;
+
+  --labai-navy: #294A68;
+  --labai-muted-blue: #71869D;
+  --labai-red: #D76B63;
+  --labai-green: #8FAF9A;
+  --labai-border: #E7E1D7;
+}
+
+
+/* ========================================
+   MAIN CENTER PANEL
+======================================== */
+
+.main-content > .page-container {
+  background-color: #FFFEFC !important;
+
+  border: 1px solid #E9E3D9;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 12px 35px rgba(41, 74, 104, 0.07);
+
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   FORM CARDS
+======================================== */
+
+.main-content .form-card {
+  background-color: #FFFFFF !important;
+
+  border: 1px solid #E8E3DA !important;
+
+  box-shadow:
+    0 5px 18px rgba(41, 74, 104, 0.035);
+}
+
+
+/* ========================================
+   HEADINGS
+======================================== */
+
+.main-content .page-container h1,
+.main-content .page-container h2,
+.main-content .page-container h3,
+.main-content .page-container h4 {
+  color: #294A68 !important;
+}
+
+
+/* ========================================
+   PARAGRAPHS
+======================================== */
+
+.main-content .page-container p {
+  color: #71869D;
+}
+
+
+/* ========================================
+   SECTION NUMBER
+======================================== */
+
+.main-content .section-number {
+  background-color: #EEF3F6 !important;
+
+  color: #53718D !important;
+
+  border: 1px solid #E0E8ED;
+}
+
+
+/* ========================================
+   PRIVACY NOTICE
+======================================== */
+
+.main-content .privacy-notice {
+  background-color: #F8FAFB !important;
+
+  border: 1px solid #E5EAF0;
+
+  border-right: 4px solid #D76B63;
+}
+
+.main-content .privacy-icon {
+  background-color: #FFF1EF !important;
+}
+
+
+/* ========================================
+   INPUTS
+======================================== */
+
+.main-content .page-container input,
+.main-content .page-container select,
+.main-content .page-container textarea {
+  background-color: #FFFFFF !important;
+
+  border-color: #E4DED4 !important;
+
+  color: #294A68 !important;
+}
+
+.main-content .page-container input:focus,
+.main-content .page-container select:focus,
+.main-content .page-container textarea:focus {
+  border-color: #8FAF9A !important;
+
+  box-shadow:
+    0 0 0 3px rgba(143, 175, 154, 0.16) !important;
+}
+
+
+/* ========================================
+   PLACEHOLDERS
+======================================== */
+
+.main-content .page-container input::placeholder,
+.main-content .page-container textarea::placeholder {
+  color: #A1ADB7 !important;
+}
+
+
+/* ========================================
+   SUCCESS COLORS
+======================================== */
+
+.main-content .success-message {
+  background-color: #F0F5F0 !important;
+
+  border-color: #D9E7DB !important;
+
+  color: #638A70 !important;
+}
+
+
+/* ========================================
+   REQUIRED STAR & WARNINGS
+======================================== */
+
+.main-content .required-star {
+  color: #D76B63 !important;
+}
+
+.main-content .validation-toast {
+  background-color: #FFFEFC !important;
+
+  border-right-color: #D76B63 !important;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 650px) {
+
+  .main-content > .page-container {
+    border-radius: 17px;
+
+    box-shadow:
+      0 6px 20px rgba(41, 74, 104, 0.055);
+  }
+
+}
+
+/* ========================================
+   LAB TESTS PAGE - MATCH PROFILE PAGE
+======================================== */
+
+.lab-top-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 22px;
+}
+
+.light-action-button {
+  min-height: 44px;
+  padding: 0 18px;
+
+  border: 1px solid #e5d2cb;
+  border-radius: 12px;
+
+  background-color: #fff7f4;
+  color: #d76b63;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.light-action-button:hover {
+  background-color: #fff0eb;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(215, 107, 99, 0.12);
+}
+
+.test-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.test-item-card {
+  background-color: #ffffff !important;
+  border: 1px solid #e8e3da !important;
+  box-shadow: 0 5px 18px rgba(41, 74, 104, 0.035);
+}
+
+.remove-test-button {
+  margin-right: auto;
+
+  min-height: 40px;
+  padding: 0 16px;
+
+  border: 1px solid #efd1cd;
+  border-radius: 10px;
+
+  background-color: #fff6f4;
+  color: #d76b63;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.remove-test-button:hover {
+  background-color: #ffecea;
+  transform: translateY(-1px);
+}
+
+.lab-submit-area {
+  gap: 14px;
+}
+
+.lab-submit-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.secondary-action-button {
+  min-width: 240px;
+  min-height: 56px;
+  padding: 0 24px;
+
+  border: 1px solid #d9e1e8;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+  color: #294a68;
+
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 14px rgba(41, 74, 104, 0.07);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.secondary-action-button:hover {
+  background-color: #f8fafb;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(41, 74, 104, 0.1);
+}
+
+/* یکنواخت‌سازی کامل ظاهر صفحه دوم با صفحه اول */
+
+.profile-page .test-item-card .form-section-header h3,
+.profile-page .test-item-card .form-section-header p,
+.profile-page .test-item-card .form-field label,
+.profile-page .test-item-card .field-description,
+.profile-page .test-item-card input,
+.profile-page .test-item-card select,
+.profile-page .test-item-card textarea {
+  font-family: inherit;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .lab-top-actions {
+    margin-bottom: 18px;
+  }
+
+  .lab-submit-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .secondary-action-button,
+  .profile-submit-button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .remove-test-button {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .light-action-button {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .secondary-action-button {
+    font-size: 16px;
+  }
+}
+
+
+/* ========================================
+   ADD NEW TEST - BOTTOM POSITION
+======================================== */
+
+.lab-bottom-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 25px;
+  padding-top: 22px;
+
+  border-top: 1px solid #EAE4D9;
+}
+
+.lab-bottom-actions .light-action-button {
+  min-width: 230px;
+  min-height: 52px;
+
+  border: 1px solid #E8CFC8;
+  border-radius: 13px;
+
+  background-color: #FFF7F4;
+  color: #D76B63;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  transition: all 0.25s ease;
+}
+
+.lab-bottom-actions .light-action-button:hover {
+  background-color: #FCECE7;
+
+  border-color: #D76B63;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 16px rgba(215, 107, 99, 0.12);
+}
+
+.lab-bottom-actions .light-action-button span {
+  font-size: 21px;
+  margin-left: 7px;
+}
+
+@media (max-width: 600px) {
+  .lab-bottom-actions .light-action-button {
+    width: 100%;
+  }
+}
+

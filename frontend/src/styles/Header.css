@@ -1,0 +1,677 @@
+
+/* ========================================
+   LABAI HEADER
+======================================== */
+
+.site-header {
+  width: 100%;
+  background-color: #ffffff;
+  direction: rtl;
+  position: relative;
+  border-bottom: 1px solid #e8edf3;
+  box-shadow: 0 4px 16px rgba(23, 59, 112, 0.055);
+  overflow: hidden;
+
+  font-family:
+    "Vazirmatn Variable",
+    "Vazirmatn",
+    "Segoe UI",
+    Tahoma,
+    sans-serif;
+}
+
+/* نوار رنگی بالای هدر */
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #173b70 0%,
+    #173b70 72%,
+    #d94b4b 100%
+  );
+}
+
+
+/* ========================================
+   Main Container
+======================================== */
+
+.header-container {
+  width: min(1450px, calc(100% - 70px));
+  min-height: 125px;
+  margin: 0 auto;
+  padding: 18px 0;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+
+/* ========================================
+   BRAND - RIGHT SIDE
+======================================== */
+
+.header-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+
+  flex-shrink: 0;
+  order: 1;
+
+  direction: ltr;
+}
+
+
+/* ========================================
+   Brand Text
+======================================== */
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 3px;
+
+  direction: rtl;
+  text-align: right;
+
+  order: 1;
+}
+
+
+.brand-name {
+  width: 100%;
+
+  font-family:
+    "Vazirmatn Variable",
+    "Vazirmatn",
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 32px;
+  font-weight: 850;
+  line-height: 1.2;
+  letter-spacing: -1px;
+
+  direction: ltr;
+  text-align: right;
+}
+
+
+.brand-lab {
+  color: #173b70;
+}
+
+
+.brand-ai {
+  color: #d94b4b;
+}
+
+
+.brand-subtitle {
+  width: 100%;
+
+  color: #49678f;
+
+  font-family:
+    "Vazirmatn Variable",
+    "Vazirmatn",
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.8;
+
+  white-space: nowrap;
+  direction: rtl;
+  text-align: right;
+}
+
+
+/* ========================================
+   Health Logo
+======================================== */
+
+.brand-logo {
+  width: 66px;
+  height: 66px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  order: 2;
+}
+
+
+.brand-logo svg {
+  width: 66px;
+  height: 66px;
+  display: block;
+
+  transition: transform 0.25s ease;
+}
+
+
+.brand-logo:hover svg {
+  transform: translateY(-2px);
+}
+
+
+/* ========================================
+   PROGRESS AREA - LEFT SIDE
+======================================== */
+
+.header-progress {
+  flex: 1;
+
+  max-width: 760px;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  direction: rtl;
+  order: 2;
+
+  /* انتقال بیشتر مسیر مراحل به سمت راست */
+  transform: translateX(clamp(80px, 8vw, 170px));
+}
+
+
+/* ========================================
+   Progress Title
+======================================== */
+
+.progress-title {
+  color: #173b70;
+
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   Progress Steps
+======================================== */
+
+.progress-steps {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  direction: rtl;
+}
+
+
+/* ========================================
+   Individual Step
+======================================== */
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  flex-shrink: 0;
+}
+
+
+.step-circle {
+  width: 34px;
+  height: 34px;
+
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f4f6f9;
+  border: 1.5px solid #dce3eb;
+
+  color: #8b9aae;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.step-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+
+.step-label {
+  color: #6f8198;
+
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.7;
+
+  white-space: nowrap;
+}
+
+
+.step-status {
+  color: #a0adbb;
+
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  white-space: nowrap;
+}
+
+
+/* ========================================
+   Active Step
+======================================== */
+
+.progress-step.active .step-circle {
+  background-color: #d94b4b;
+  border-color: #d94b4b;
+  color: #ffffff;
+
+  box-shadow: 0 4px 10px rgba(217, 75, 75, 0.18);
+}
+
+
+.progress-step.active .step-label {
+  color: #173b70;
+  font-weight: 800;
+}
+
+
+.progress-step.active .step-status {
+  color: #d94b4b;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   Step Connectors
+======================================== */
+
+.step-connector {
+  flex: 1;
+  min-width: 35px;
+
+  height: 1px;
+
+  margin: 0 13px;
+
+  background-color: #dfe5ec;
+
+  position: relative;
+}
+
+
+.step-connector span {
+  position: absolute;
+
+  top: -2px;
+  right: 0;
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+  background-color: #dfe5ec;
+}
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 1050px) and (min-width: 801px) {
+
+  .header-container {
+    width: calc(100% - 40px);
+    gap: 30px;
+  }
+
+  .header-progress {
+    max-width: 620px;
+    transform: translateX(55px);
+  }
+
+  .step-label {
+    font-size: 12px;
+  }
+
+  .step-status {
+    font-size: 9px;
+  }
+
+  .step-connector {
+    min-width: 25px;
+    margin: 0 8px;
+  }
+}
+
+
+/* ========================================
+   Smaller Tablet
+======================================== */
+
+@media (max-width: 800px) and (min-width: 651px) {
+
+  .header-container {
+    min-height: 110px;
+    width: calc(100% - 30px);
+    gap: 20px;
+  }
+
+  .header-progress {
+    transform: translateX(35px);
+  }
+
+  .brand-logo,
+  .brand-logo svg {
+    width: 58px;
+    height: 58px;
+  }
+
+  .brand-name {
+    font-size: 28px;
+  }
+
+  .brand-subtitle {
+    font-size: 12px;
+  }
+
+  .progress-title {
+    font-size: 13px;
+  }
+
+  .step-circle {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .step-label {
+    font-size: 11px;
+  }
+
+  .step-status {
+    display: none;
+  }
+
+  .step-connector {
+    min-width: 18px;
+    margin: 0 5px;
+  }
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 650px) {
+
+  .header-container {
+    width: calc(100% - 24px);
+    min-height: auto;
+
+    padding: 14px 0;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  /* برند در بالای هدر */
+
+  .header-brand {
+    width: 100%;
+
+    justify-content: flex-end;
+    gap: 11px;
+
+    direction: ltr;
+  }
+
+  .brand-logo,
+  .brand-logo svg {
+    width: 52px;
+    height: 52px;
+  }
+
+  .brand-name {
+    font-size: 25px;
+  }
+
+  .brand-subtitle {
+    font-size: 11px;
+  }
+
+  /* مسیر مراحل */
+
+  .header-progress {
+    width: 100%;
+    max-width: none;
+
+    gap: 7px;
+
+    transform: none;
+  }
+
+  .progress-title {
+    font-size: 12px;
+  }
+
+  .progress-steps {
+    width: 100%;
+  }
+
+  .progress-step {
+    gap: 6px;
+  }
+
+  .step-circle {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+
+  .step-label {
+    font-size: 10px;
+  }
+
+  .step-connector {
+    min-width: 12px;
+    margin: 0 4px;
+  }
+}
+
+
+/* ========================================
+   Very Small Mobile
+======================================== */
+
+@media (max-width: 400px) {
+
+  .header-container {
+    width: calc(100% - 18px);
+  }
+
+  .brand-logo,
+  .brand-logo svg {
+    width: 47px;
+    height: 47px;
+  }
+
+  .brand-name {
+    font-size: 22px;
+  }
+
+  .brand-subtitle {
+    font-size: 10px;
+  }
+
+  .step-label {
+    font-size: 9px;
+  }
+
+  .step-circle {
+    width: 26px;
+    height: 26px;
+  }
+
+  .step-connector {
+    min-width: 8px;
+    margin: 0 2px;
+  }
+}
+
+/* ========================================
+   FINAL HEADER POSITION FIX
+======================================== */
+
+.header-container {
+  position: relative;
+}
+
+/* انتقال مسیر مراحل به نزدیکی لوگو */
+.header-progress {
+  position: absolute;
+
+  right: 350px;
+  top: 50%;
+
+  width: min(900px, calc(100% - 390px));
+  max-width: none;
+
+  flex: none;
+
+  transform: translateY(-50%);
+
+  z-index: 2;
+}
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 1050px) and (min-width: 801px) {
+
+  .header-progress {
+    position: static;
+
+    width: auto;
+    max-width: 620px;
+
+    flex: 1;
+
+    transform: translateX(55px);
+  }
+}
+
+@media (max-width: 800px) and (min-width: 651px) {
+
+  .header-progress {
+    position: static;
+
+    width: auto;
+
+    flex: 1;
+
+    transform: translateX(35px);
+  }
+}
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 650px) {
+
+  .header-progress {
+    position: static;
+
+    width: 100%;
+    max-width: none;
+
+    flex: 1;
+
+    transform: none;
+  }
+}
+
+/* ========================================
+   FIX: COMPLETED STEPS - GREEN
+======================================== */
+
+/* دایره مرحله تکمیل‌شده */
+
+.site-header .progress-step.completed .step-circle {
+  background-color: #35a66f !important;
+  border-color: #35a66f !important;
+  color: #ffffff !important;
+
+  box-shadow: 0 4px 12px rgba(53, 166, 111, 0.22);
+}
+
+/* عنوان مرحله تکمیل‌شده */
+
+.site-header .progress-step.completed .step-label {
+  color: #258456 !important;
+  font-weight: 800;
+}
+
+/* وضعیت تکمیل‌شده */
+
+.site-header .progress-step.completed .step-status {
+  color: #35a66f !important;
+  font-weight: 700;
+}
+
+/* خط اتصال مرحله تکمیل‌شده */
+
+.site-header .step-connector.completed {
+  background-color: #35a66f !important;
+}
+
+.site-header .step-connector.completed span {
+  background-color: #35a66f !important;
+}
+
+/* انیمیشن تغییر رنگ */
+
+.site-header .progress-step.completed .step-circle,
+.site-header .progress-step.completed .step-label,
+.site-header .progress-step.completed .step-status,
+.site-header .step-connector.completed {
+  transition: all 0.3s ease;
+}
